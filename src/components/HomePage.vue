@@ -86,12 +86,7 @@ export default {
 </script>
 
 <style>
-@import url("https://fonts.googleapis.com/css2?family=Krona+One&display=swap");
-
 #home {
-  font-family: "Krona One", sans-serif;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
   text-align: center;
   color: #2c3e50;
   max-width: 100%;
@@ -104,6 +99,8 @@ body {
 }
 h1 {
   font-size: 190px;
+  font-weight: 900;
+  letter-spacing: 20px;
   color: white;
   text-transform: uppercase;
   margin: 0 auto;

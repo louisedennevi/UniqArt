@@ -11,6 +11,7 @@ export default {};
 <style>
 #about {
   color: black;
-  font-size: 150px;
+  font-size: 120px;
+  letter-spacing: 10px;
 }
 </style>
