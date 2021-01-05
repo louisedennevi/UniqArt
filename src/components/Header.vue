@@ -1,22 +1,15 @@
 <template>
-  <div class="parent">
-    <StickyNav :options="stickyOptions" @changed="onchange" @expand="expand" />
-    <div class="sticky-nav-fixed" style="top: -1px; z-index: 1001;"></div>
-  </div>
+  <div class="navbar"></div>
 </template>
 
 <script>
-import { StickyNav } from "vue-sticky-nav";
-
 export default {
-  components: {
-    StickyNav
-  }
+  components: {}
 };
 </script>
 
 <style scoped>
 .navbar {
-  height: 70px;
+  height: 20px;
 }
 </style>
