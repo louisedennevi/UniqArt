@@ -1,6 +1,6 @@
 <template>
   <div>
-    <router-link :to="{ name: 'mollybladskog' }"
+    <router-link :to="{ name: 'Mollybladskog', params: { id: 3 } }"
       >See Molly bladskog</router-link
     >
     <!-- <h4>{{ $route.params.id }}</h4>
@@ -11,6 +11,7 @@
       >Designer info</router-link
     >
     <router-view /> -->
+    <router-view />
   </div>
 </template>
 

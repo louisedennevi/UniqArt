@@ -1,6 +1,6 @@
 <template>
   <div>
-    <h3>404 not found</h3>
+    <h3>Sorry, seems like this site doesn't exist!</h3>
   </div>
 </template>
 
@@ -8,4 +8,8 @@
 export default {};
 </script>
 
-<style></style>
+<style>
+h3 {
+  color: black;
+}
+</style>
