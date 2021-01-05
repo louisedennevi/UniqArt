@@ -8,9 +8,15 @@
     "lint": "vue-cli-service lint"
   },
   "dependencies": {
+    "aos": "^2.3.4",
+    "bootstrap": "^4.5.3",
+    "bootstrap-vue": "^2.21.2",
     "core-js": "^3.6.5",
+    "sass-loader": "^10.1.0",
     "vue": "^2.6.11",
-    "vue-router": "^3.2.0"
+    "vue-parallaxy": "^1.1.1",
+    "vue-router": "^3.2.0",
+    "vue-sticky-nav": "^1.2.6"
   },
   "devDependencies": {
     "@vue/cli-plugin-babel": "~4.5.0",
