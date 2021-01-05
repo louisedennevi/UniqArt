@@ -1,6 +1,8 @@
 <template>
   <div>
-    <DesignerProfile />
+    <router-link :to="{ name: 'mollybladskog' }"
+      >See Molly bladskog</router-link
+    >
     <!-- <h4>{{ $route.params.id }}</h4>
     <router-link :to="{ name: 'Profile', params: { id: 456 } }"
       >Antoher designer</router-link
@@ -13,13 +15,11 @@
 </template>
 
 <script>
-import DesignerProfile from "../components/DesignerProfile";
+// import DesignerProfile from "../components/DesignerProfile";
 
 export default {
   name: "Profile",
-  components: {
-    DesignerProfile
-  }
+  components: {}
   // mounted() {
   //   console.log(this.$route.params.id);
   // },

@@ -1,15 +1,17 @@
 <template>
   <div class="designerprofile">
-    <img src="../assets/images/mollybladskog.jpg" id="mollybladskog" />
-    <div>
-      <img src="../assets/images/mollybladskog-one.jpg" id="art" />
-      <img src="../assets/images/mollybladskog-two.jpg" id="art" />
-    </div>
+    <MollyBladskog />
   </div>
 </template>
 
 <script>
-export default {};
+import MollyBladskog from "../components/MollyBladskog";
+
+export default {
+  components: {
+    MollyBladskog
+  }
+};
 </script>
 
 <style>

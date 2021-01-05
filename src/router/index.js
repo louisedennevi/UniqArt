@@ -4,6 +4,7 @@ import Home from "../views/Home.vue";
 import Profile from "../views/Profile";
 import NotFound from "../views/NotFound.vue";
 // import Info from "../views/Info.vue";
+import MollyBladskog from "../components/MollyBladskog";
 
 Vue.use(VueRouter);
 
@@ -16,14 +17,14 @@ const routes = [
   {
     path: "/profile",
     name: "Profile",
-    component: Profile
-    // children: [
-    //   {
-    //     path: "info",
-    //     name: "Info",
-    //     compontent: Info
-    //   }
-    // ]
+    component: Profile,
+    children: [
+      {
+        path: "/mollybladskog",
+        name: "mollybladskog",
+        compontent: MollyBladskog
+      }
+    ]
   },
   {
     path: "/about",
