@@ -3,7 +3,7 @@ import VueRouter from "vue-router";
 import Home from "../views/Home.vue";
 import Profile from "../views/Profile";
 import NotFound from "../views/NotFound.vue";
-import Info from "../views/Info.vue";
+// import Info from "../views/Info.vue";
 
 Vue.use(VueRouter);
 
@@ -14,16 +14,16 @@ const routes = [
     component: Home
   },
   {
-    path: "/profile/:id",
+    path: "/profile",
     name: "Profile",
-    component: Profile,
-    children: [
-      {
-        path: "info",
-        name: "Info",
-        compontent: Info
-      }
-    ]
+    component: Profile
+    // children: [
+    //   {
+    //     path: "info",
+    //     name: "Info",
+    //     compontent: Info
+    //   }
+    // ]
   },
   {
     path: "/about",
