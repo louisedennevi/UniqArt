@@ -10,14 +10,18 @@
 
 <script>
 export default {
-  name: "mollybladskog"
+  name: "Mollybladskog"
 };
 </script>
 
 <style>
-#about {
-  color: black;
-  font-size: 120px;
-  letter-spacing: 10px;
+#mollybladskog {
+  height: 300px;
+  width: 850px;
+}
+#art {
+  height: 300px;
+  width: 200px;
+  padding: 20px;
 }
 </style>
