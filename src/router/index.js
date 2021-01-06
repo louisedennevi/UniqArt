@@ -5,6 +5,7 @@ import Profile from "../views/Profile";
 import NotFound from "../views/NotFound.vue";
 // import Info from "../views/Info.vue";
 import MollyBladskogProfile from "../views/MollyBladskogProfile.vue";
+import LouiseDenneviProfile from "../views/LouiseDenneviProfile.vue";
 
 Vue.use(VueRouter);
 
@@ -23,6 +24,11 @@ const routes = [
     path: "/mollybladskog",
     name: "Mollybladskog",
     component: MollyBladskogProfile
+  },
+  {
+    path: "/louisedennevi",
+    name: "Louisedennevi",
+    component: LouiseDenneviProfile
   },
   // {
   //   path: "/profile",

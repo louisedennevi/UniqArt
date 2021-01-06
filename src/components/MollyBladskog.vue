@@ -1,6 +1,11 @@
 <template>
   <div class="designerprofile">
-    <img src="../assets/images/mollybladskog.jpg" id="mollybladskog" />
+    <img
+      src="../assets/images/mollybladskog.jpg"
+      id="mollybladskog"
+      data-aos="fade-in"
+      data-aos-duration="1500"
+    />
     <div>
       <img src="../assets/images/mollybladskog-one.jpg" id="art" />
       <img src="../assets/images/mollybladskog-two.jpg" id="art" />

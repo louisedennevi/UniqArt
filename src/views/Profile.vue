@@ -4,6 +4,10 @@
       >See Molly bladskog</router-link
     >
     <router-view />
+    <router-link :to="{ name: 'Louisedennevi' }"
+      >See Louise Dennevi</router-link
+    >
+    <router-view />
   </div>
 </template>
 
