@@ -6,6 +6,12 @@ import NotFound from "../views/NotFound.vue";
 // import Info from "../views/Info.vue";
 import MollyBladskogProfile from "../views/MollyBladskogProfile.vue";
 import LouiseDenneviProfile from "../views/LouiseDenneviProfile.vue";
+import Login from "../views/Login.vue";
+import Secret from "../views/Secret.vue";
+import Register from "../views/Register.vue";
+
+import firebase from "firebase/app";
+import "firebase/auth";
 
 Vue.use(VueRouter);
 
@@ -30,18 +36,22 @@ const routes = [
     name: "Louisedennevi",
     component: LouiseDenneviProfile
   },
-  // {
-  //   path: "/profile",
-  //   name: "Profile",
-  //   component: Profile,
-  //   children: [
-  //     {
-  //       path: "/mollybladskog",
-  //       name: "Mollybladskog",
-  //       compontent: MollyBladskog
-  //     }
-  //   ]
-  // },
+  {
+    path: "/login",
+    name: "login",
+    component: Login
+  },
+  {
+    path: "/register",
+    name: "register",
+    component: Register
+  },
+  {
+    path: "/secret",
+    name: "secret",
+    component: Secret,
+    meta: { requiresAuth: true }
+  },
   {
     path: "/about",
     name: "About",
@@ -58,6 +68,16 @@ const router = new VueRouter({
   mode: "history",
   base: process.env.BASE_URL,
   routes
+});
+
+router.beforeEach((to, from, next) => {
+  const requiresAuth = to.matched.some(record => record.meta.requiresAuth);
+  const isAuthenticated = firebase.auth().currentUser;
+  if (requiresAuth && !isAuthenticated) {
+    next("/login");
+  } else {
+    next();
+  }
 });
 
 export default router;

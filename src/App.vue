@@ -1,13 +1,24 @@
 <template>
   <div id="app">
+    <top-header></top-header>
     <div id="nav">
       <router-link to="/">Home</router-link> |
       <router-link to="/about">About</router-link> |
-      <router-link to="/profile">Profile</router-link>
+      <router-link to="/profile">Profile</router-link> |
+      <router-link to="/login">Login</router-link> |
+      <router-link to="/secret">Secret</router-link> |
+      <router-link to="/register">Register</router-link>
     </div>
     <router-view />
   </div>
 </template>
+
+<script>
+import TopHeader from "./components/TopHeader.vue";
+export default {
+  components: { "top-header": TopHeader }
+};
+</script>
 
 <style>
 @import url("https://fonts.googleapis.com/css2?family=Prompt:wght@100;500;700;900&display=swap");
