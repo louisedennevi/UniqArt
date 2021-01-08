@@ -20,7 +20,7 @@ app.get("/louise", checkIfAuthenticated, async (_, res: Express.Response ) => {
 });
 
 const sendRequest = async() => {
-    const characters = await axios.get("https://www.breakingbadapi.com/api/characters")
+    const characters = await axios.get("AIzaSyB3gzVghWYFWdaT_JUt0Bu9p-hYu_xMDzQ")
     return characters;
 }
 
