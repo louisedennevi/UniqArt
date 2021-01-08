@@ -100,7 +100,7 @@ body {
 h1 {
   font-size: 190px;
   font-weight: 900;
-  letter-spacing: 20px;
+  letter-spacing: 40px;
   color: white;
   text-transform: uppercase;
   margin: 0 auto;
