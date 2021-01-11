@@ -3,7 +3,9 @@
     <my-header></my-header>
     <div class="wrapper">
       <div style="background-color: #FFB8DF; height: 100vh;">
-        <h1 data-aos="fade-right" data-aos-duration="1500">uniq art</h1>
+        <h1 class="display-4" data-aos="fade-right" data-aos-duration="1500">
+          uniq art
+        </h1>
       </div>
       <div class="parallax-container">
         <h1
@@ -13,7 +15,7 @@
         >
           MODERN
         </h1>
-        <parallax :speed-factor="0.5" breakpoint="(min-width: 80px)">
+        <parallax :speed-factor="0.5">
           <img src="../assets/images/image-one.jpg" />
         </parallax>
       </div>
